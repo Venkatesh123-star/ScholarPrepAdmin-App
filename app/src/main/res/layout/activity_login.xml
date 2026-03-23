@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:id="@+id/scrollView">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/main1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/classy"
+        tools:context=".LoginActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="147dp"
+            android:layout_height="154dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.497"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.066"
+            app:srcCompat="@drawable/logo" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome Back!"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@id/imageView3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Please login to your account"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:layout_marginTop="5sp"
+            app:layout_constraintTop_toBottomOf="@id/tvWelcome"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:layout_constraintVertical_bias="0.0">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:paddingBottom="24dp"
+                android:text="Admin / Teacher Login"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Enter email"
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/round"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ForgotPassword"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Forgot Password?"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/newuser"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Register here"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/login"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="85dp"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="#2ECC71"
+                android:padding="15dp"
+                android:text="Login"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:cornerRadius="5dp" />
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

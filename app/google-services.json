@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "818141407015",
+    "firebase_url": "https://scholarship-app-5e660-default-rtdb.firebaseio.com",
+    "project_id": "scholarship-app-5e660",
+    "storage_bucket": "scholarship-app-5e660.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818141407015:android:ba6efd9c1e1e46bff2eb02",
+        "android_client_info": {
+          "package_name": "com.example.scholarprepadmin"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0IWII8TL_ROt4WmDyi4is9i9YZS44XXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:818141407015:android:5a9e5f36320ac450f2eb02",
+        "android_client_info": {
+          "package_name": "com.example.scholarshipapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD0IWII8TL_ROt4WmDyi4is9i9YZS44XXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
