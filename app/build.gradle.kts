@@ -1,3 +1,5 @@
+import org.gradle.kotlin.dsl.coreLibraryDesugaring
+
 plugins {
     alias(libs.plugins.android.application)
     id("com.google.gms.google-services")
@@ -39,6 +41,8 @@ android {
     compileOptions {
         sourceCompatibility = JavaVersion.VERSION_11
         targetCompatibility = JavaVersion.VERSION_11
+
+
     }
 }
 
@@ -55,8 +59,13 @@ dependencies {
     implementation(libs.androidx.credentials)
     implementation(libs.androidx.credentials.play.services.auth)
     implementation(libs.googleid)
+    implementation("com.google.firebase:firebase-storage-ktx")
+    implementation(libs.firebase.firestore)
+    implementation(libs.androidx.material3)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+    implementation("com.github.bumptech.glide:glide:4.16.0")
+    implementation("androidx.activity:activity-ktx:1.13.0")
 
 }

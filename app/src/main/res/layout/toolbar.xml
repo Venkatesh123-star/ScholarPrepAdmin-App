@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="#263949">
+
+    <ImageView
+        android:id="@+id/imgProfileToolbar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/circle_bg"
+        android:backgroundTint="#263949"
+        android:src="@android:drawable/ic_menu_camera"/>
+
+    <TextView
+        android:text="ScholarPrep Admin"
+        android:textSize="25sp"
+        android:textColor="@android:color/white"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#263949"/>
+
+</LinearLayout>

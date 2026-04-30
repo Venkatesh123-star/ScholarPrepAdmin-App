@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddQuestionActivity"
+    android:background="@drawable/classy">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="0dp"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/toolbarColor"
+        android:titleTextColor="@android:color/white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="65dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:padding="12dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:id="@+id/select"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#74A6C8"
+                android:text="Select Topic"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"/>
+
+            <LinearLayout
+                android:id="@+id/layoutTopics"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"/>
+
+            <Spinner
+                android:id="@+id/spDifficulty"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="15dp"/>
+
+            <EditText
+                android:id="@+id/etQuestion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Enter question "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etOpt1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Option 1 "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etOpt2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Option 2 "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etOpt3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Option 3 "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etOpt4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Option 4 "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Correct Answer "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etHint1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Hint 1"
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etHint2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Hint 2"
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/etSolution"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/round"
+                android:hint="Solution "
+                android:inputType="text"
+                android:padding="9dp"
+                android:textColor="@color/black"
+                android:textColorHint="@color/grey"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/savesolution"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#74A6C8"
+                android:text="Save "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

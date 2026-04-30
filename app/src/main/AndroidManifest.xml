@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +13,54 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScholarPrepAdmin">
+        <activity
+            android:name=".EighthMATActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EighthHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EighthMarathiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EighthEnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EighthMathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthMATActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthHindiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthMarathiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthEnglishActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddQuestionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".FifthMathActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EnrolllRequestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ToolbarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HelpSupportActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminRequestActivity"
+            android:exported="false" />
         <activity
             android:name=".ForgotPasswordActivity"
             android:exported="false" />

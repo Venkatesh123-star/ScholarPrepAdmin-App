@@ -47,7 +47,7 @@
             android:layout_marginBottom="10dp"
             android:background="@drawable/round"
             android:ems="10"
-            android:hint="Enter email address"
+            android:hint="Enter email "
             android:inputType="textEmailAddress"
             android:padding="9dp"
             android:textColor="@color/black"
@@ -82,18 +82,28 @@
 
         <Button
             android:id="@+id/register"
-            android:layout_width="150dp"
+            android:layout_width="200dp"
             android:layout_height="wrap_content"
             android:layout_marginLeft="8dp"
             android:layout_marginTop="20dp"
             android:backgroundTint="#2ECC71"
             android:padding="15dp"
-            android:text="Register"
+            android:text="Send for Approval"
             android:textAlignment="center"
             android:textColor="#FFFFFF"
             android:textSize="20sp"
             app:cornerRadius="5dp" />
 
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:text="Status: Not Applied"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
 
 
     </LinearLayout>
